@@ -11,10 +11,10 @@ def gcd(a,b):
         return gcd(b,a%b)
 
 def compareTo(s1,s2):
-    if not len(s1) or not len(s2):
-        if len(s1):
+    if not s1 or not s2:
+        if s1:
             return 1
-        elif len(s2):
+        elif s2:
             return -1
         else:
             return 0
